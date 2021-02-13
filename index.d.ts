@@ -1,4 +1,4 @@
-declare module "number-to-text" {
+declare module numbertotext {
 
 
 
@@ -18,6 +18,8 @@ declare module "number-to-text" {
 
 
 }
+
+export default numbertotext.NumberToText
 
 
 

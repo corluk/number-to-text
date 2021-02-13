@@ -12,7 +12,7 @@ declare module numbertotext {
         convertToText(num: number, options: NumberToTextOptions): string
     }
     class NumberToText {
-        convert(num: number, options: NumberToTextOptions): string
+        convertToText(num: number, options: NumberToTextOptions): string
         addConverter(language: string, converter: Converter): string
     }
 

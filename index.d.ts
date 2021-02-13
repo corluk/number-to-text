@@ -1,4 +1,4 @@
-declare module "number-to-text" {
+declare module numbertotext {
 
     /***
      * 
@@ -15,10 +15,17 @@ declare module "number-to-text" {
         separator? : string , 
         case? : string  
     } 
-    function convert(num : number , options : NumberToTextOptions)
+   
     class Converter {
         convertToText(num:number , options :NumberToTextOptions)
     }
+    class NumberToText {
+        convert(num : number , options : NumberToTextOptions)
+        addConverter(language: string , converter: Converter)
+    }
 
-    function addConverter(language: string , converter: Converter)
+    
 }
+type obj =    numbertotext.NumberToText  
+export default obj
+ 

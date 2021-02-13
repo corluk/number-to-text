@@ -1,4 +1,4 @@
-declare module numbertotext {
+declare module numbertotextnamespace  {
 
     /***
      * 
@@ -17,15 +17,19 @@ declare module numbertotext {
     } 
    
     class Converter {
-        convertToText(num:number , options :NumberToTextOptions)
+        convertToText(num:number , options :NumberToTextOptions) : string  
     }
     class NumberToText {
-        convert(num : number , options : NumberToTextOptions)
-        addConverter(language: string , converter: Converter)
+        convert(num : number , options : NumberToTextOptions) :string 
+        addConverter(language: string , converter: Converter) : string 
     }
-
+     
+     
     
 }
-type obj =    numbertotext.NumberToText  
-export default obj
+
+declare const _exports: typeof numbertotextnamespace.NumberToText;
+export = _exports
+ 
+ 
  

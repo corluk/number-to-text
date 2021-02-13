@@ -16,4 +16,9 @@ declare module "number-to-text" {
         case? : string  
     } 
     function convert(num : number , options : NumberToTextOptions)
+    class Converter {
+        convertToText(num:number , options :NumberToTextOptions)
+    }
+
+    function addConverter(language: string , converter: Converter)
 }

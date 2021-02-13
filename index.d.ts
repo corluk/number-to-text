@@ -11,9 +11,9 @@ declare module "number-to-text" {
      */
 
     interface  NumberToTextOptions  {
-        language: string , 
-        separator : string , 
-        case : string  
+        language?: string , 
+        separator? : string , 
+        case? : string  
     } 
     function convert(num : number , options : NumberToTextOptions)
 }

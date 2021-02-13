@@ -32,4 +32,4 @@ class NumberToText {
   }
 }
 
-module.exports = new NumberToText()
+module.exports = NumberToText
